@@ -1,6 +1,6 @@
-// Compile: gcc -O2 image_term_minimal.c -o image_term_minimal -lm
+// Compile: gcc -Os img2txt.c -o img2txt -lm
 // Needs stb_image.h in the same folder
-// Run: ./image_term_minimal image.png
+// Run: ./img2txt image.png
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
