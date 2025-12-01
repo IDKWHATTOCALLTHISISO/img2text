@@ -1,5 +1,5 @@
 #!/bin/bash
-# install: wget -qO- https://img2text.aptjet.dpdns.org/build.sh | bash
+# install: wget -qO- https://img2text.aptjet.dpdns.org/slimcc.sh | bash
 set -e
 cwd="$(pwd)"
 mkdir /tmp/build && cd /tmp/build
