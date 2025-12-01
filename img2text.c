@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <math.h>
+#define STBI_NO_SIMD
 
 static inline void set_fg(unsigned char r, unsigned char g, unsigned char b) {
     printf("\x1b[38;2;%u;%u;%um", r, g, b);
