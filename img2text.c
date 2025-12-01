@@ -1,7 +1,7 @@
 // Compile: gcc -Os img2txt.c -o img2txt -lm
 // Needs stb_image.h in the same folder
 // Run: ./img2txt image.png
-
+#define STBI_NO_SIMD
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #include <stdio.h>
@@ -9,7 +9,6 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <math.h>
-#define STBI_NO_SIMD
 
 static inline void set_fg(unsigned char r, unsigned char g, unsigned char b) {
     printf("\x1b[38;2;%u;%u;%um", r, g, b);
